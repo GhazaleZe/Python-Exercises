@@ -10,3 +10,6 @@ print( "This the items : " , my_dictionary.items())
 List_of_Dictionary = list(my_dictionary.items())
 
 print("list of dictionary : ", List_of_Dictionary)
+
+for course, grade in List_of_Dictionary:
+    print(" In course %s the grade is %s" %(course, grade))
