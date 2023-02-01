@@ -19,6 +19,8 @@ class Person:
         print ("%s's age is %d" % (self.first_name , self.age))
     def HowManyPerson(self):
         return Person.count
+    def __del__(self):
+        Person.count -= 1
 
 # inheritance in python     
 class Student(Person):
@@ -55,3 +57,9 @@ print(Katty.weight)
 coco = Staff(1976, 'CoCo', 'Paul')
 
 coco.get_first_name_and_last_name()
+
+print(Person.count)
+
+del Katty
+
+print(Person.count)
