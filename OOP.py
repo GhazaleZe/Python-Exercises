@@ -31,35 +31,39 @@ class Staff(Person):
         print("The first name of this staff is %s" % self.first_name)
         print("The last name of this staff is %s" % self.last_name)
 
-Katty = Person(1998, 'Katty', 'Pron')
-Katty.get_first_name_and_last_name()
-Katty.get_age()
+def main():
+    Katty = Person(1998, 'Katty', 'Pron')
+    Katty.get_first_name_and_last_name()
+    Katty.get_age()
 
-Joel = Person(1969, 'Joel', 'Jo Jo')
-Joel.get_first_name_and_last_name()
+    Joel = Person(1969, 'Joel', 'Jo Jo')
+    Joel.get_first_name_and_last_name()
 
-print("There is %s Person now" % Person.count)
-print("There is %s Person now" % Joel.count)
+    print("There is %s Person now" % Person.count)
+    print("There is %s Person now" % Joel.count)
 
-Amir = Student(2001, 'Amir', 'AAB')
+    Amir = Student(2001, 'Amir', 'AAB')
 
-Amir.get_age()
+    Amir.get_age()
 
-# size is defined by itself
-Amir.weight = 84
+    # size is defined by itself
+    Amir.weight = 84
 
-print(Amir.weight)
+    print(Amir.weight)
 
-Katty.weight = 60
+    Katty.weight = 60
 
-print(Katty.weight)
+    print(Katty.weight)
 
-coco = Staff(1976, 'CoCo', 'Paul')
+    coco = Staff(1976, 'CoCo', 'Paul')
 
-coco.get_first_name_and_last_name()
+    coco.get_first_name_and_last_name()
 
-print(Person.count)
+    print(Person.count)
 
-del Katty
+    del Katty
 
-print(Person.count)
+    print(Person.count)
+    
+if __name__ == "__main__":
+    main()
